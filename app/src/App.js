@@ -1,13 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class App extends Component{
-  render() {
+import Layout from './components/Layout/Layout';
+import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder';
+
+const App = () => {
     return (
         <div>
-
+            <Layout>
+                <BurgerBuilder />
+            </Layout>
         </div>
     );
-  }
 }
 
 export default App;
