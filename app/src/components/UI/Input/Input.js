@@ -32,7 +32,7 @@ const input = (props) => {
         }
         case ('select'): {
             inputElement = (
-                <select className={inputClasses.join(' ')} value={props.value}>
+                <select defaultValue={props.value} className={inputClasses.join(' ')} >
                     {props.elementConfig.options.map(option => {
                         return (<option key={option.value} value={option.value}>{option.dispValue}</option>)
                     })}
