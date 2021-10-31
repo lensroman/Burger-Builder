@@ -18,12 +18,12 @@ const sideDrawer = (props) => {
             <div className={classes.MobileOnly}>
                 <Backdrop show={props.opened} clicked={props.closed}/>
             </div>
-            <div className={attachedClasses.join(' ')}>
+            <div className={attachedClasses.join(' ')} onClick={props.closed}>
                 <div className={classes.Logo}>
                     <Logo />
                 </div>
                 <nav>
-                    <NavigationItems />
+                    <NavigationItems isAuthenticated={props.isAuth} />
                 </nav>
             </div>
         </Fragment>
