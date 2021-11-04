@@ -7,7 +7,7 @@ import Input from '../../components/UI/Input/Input';
 
 import axios from "../../axios-orders";
 import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
-import * as actions from '../../Store/actions/index';
+import * as actions from '../../Store/actions/rootAction';
 
 import classes from './ContactData.module.scss';
 import {checkValidity} from "../../shared/utility";

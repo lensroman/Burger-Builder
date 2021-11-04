@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "../../axios-orders";
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 import { connect } from "react-redux";
-import * as actions from '../../Store/actions/index';
+import * as actions from '../../Store/actions/rootAction';
 
 import Order from '../../components/Order/Order';
 import Spinner from '../../components/UI/Spinner/Spinner';

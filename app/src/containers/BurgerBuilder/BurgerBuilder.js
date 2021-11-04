@@ -9,7 +9,7 @@ import Spinner from '../../components/UI/Spinner/Spinner';
 import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
 import axios from "../../axios-orders";
 import {connect} from "react-redux";
-import * as actions from '../../Store/actions/index';
+import * as actions from '../../Store/actions/rootAction';
 
 class BurgerBuilder extends Component{
 
@@ -40,7 +40,7 @@ class BurgerBuilder extends Component{
             })
         } else {
             this.props.onSetAuthRedirectPath('/checkout')
-            this.props.history.push('/auth')
+            this.props.history.push('/authAction')
         }
     };
 
