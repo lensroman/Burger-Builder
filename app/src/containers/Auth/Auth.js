@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import {connect} from 'react-redux';
-import * as actions from '../../Store/actions/index';
+import * as actions from '../../Store/actions/rootAction';
 import {Redirect} from "react-router-dom";
 
 import Input from '../../components/UI/Input/Input';
@@ -146,7 +146,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onAuth: (email, password, isSignUp) => dispatch(actions.auth(email, password, isSignUp)),
+        onAuth: (email, password, isSignUp) => dispatch(actions.authAction(email, password, isSignUp)),
         onSetAuthRedirectPath: () => dispatch(actions.setAuthRedirectPath('/'))
     }
 }
