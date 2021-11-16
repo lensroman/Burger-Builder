@@ -15,7 +15,7 @@ export function* purchaseBurgerSaga(action) {
 }
 
 export function* fetchOrdersSaga(action) {
-    const queryParams = '?authAction=' + action.token + '&orderBy="userId"&equalTo="' + action.userId + '"'
+    const queryParams = '?auth=' + action.token + '&orderBy="userId"&equalTo="' + action.userId + '"'
     try {
         const response = yield axios.get('orders.json' + queryParams)
         const fetchedOrders = []
